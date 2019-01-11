@@ -24,7 +24,7 @@ public class Room1 : MonoBehaviour
 	{
 		if (Input.GetButton("Interact"))
 		{
-			ChangeCandleStates();
+			
 		}
 	}
 
