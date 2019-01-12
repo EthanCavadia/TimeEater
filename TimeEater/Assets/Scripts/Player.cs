@@ -6,34 +6,38 @@ public class Player : MonoBehaviour
 {
 	[SerializeField] private float playerSpeed;
 
+	private Rigidbody2D playerRb;
 	private Animator animator;
 	
 	void Start ()
 	{
-		
+		playerRb = GetComponent<Rigidbody2D>();
 	}
 	
-	void Update () 
+	void FixedUpdate ()
 	{
-		
 		if (Input.GetKey(KeyCode.W))
 		{
-			transform.Translate(Vector2.up * playerSpeed);
+			playerRb.velocity = Vector2.up * playerSpeed;
 		}
 
 		else if (Input.GetKey(KeyCode.A))
 		{
-			transform.Translate(Vector2.left * playerSpeed);
+			playerRb.velocity = Vector2.left * playerSpeed;
 		}
 		
 		else if (Input.GetKey(KeyCode.S))
 		{
-			transform.Translate(Vector2.down * playerSpeed);
+			playerRb.velocity = Vector2.down * playerSpeed;
 		}
 		
 		else if (Input.GetKey(KeyCode.D))
 		{
-			transform.Translate(Vector2.right * playerSpeed);
+			playerRb.velocity = Vector2.right * playerSpeed;
+		}
+		else
+		{
+			playerRb.velocity = Vector2.zero;
 		}
 	}
 }
