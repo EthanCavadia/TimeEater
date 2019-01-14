@@ -6,16 +6,10 @@ using UnityEngine.Experimental.PlayerLoop;
 
 public class mapMoving : MonoBehaviour
 {
-    [SerializeField] GameObject map;
-    [SerializeField] GameObject player;
-    float TileSizeX = 0f;
-    float TileSizeY = 10f;
-    float waitForSeconds = 0.005f;
-    float playerMoveX = 0.165f;
-    float playerMoveY = 0.155f;
+    [SerializeField] GameObject camera;
+    [SerializeField] private GameObject player;
 
-
-    [SerializeField] TriggerPosition triggerPosition;
+    private Vector3 startPosition;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -29,7 +23,6 @@ public class mapMoving : MonoBehaviour
             }
         }
     }
-
  
    private void MoveRight()
    {

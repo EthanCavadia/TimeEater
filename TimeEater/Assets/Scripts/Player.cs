@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private float playerSpeed;
-
+    
     private Rigidbody2D playerRb;
     private Animator animator;
     public bool mapMoving;
