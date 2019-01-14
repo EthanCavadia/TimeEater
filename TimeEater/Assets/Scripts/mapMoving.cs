@@ -15,7 +15,7 @@ public class mapMoving : MonoBehaviour
   
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "PlayerCheck")
+        if (collision.tag == "Player")
         {
             if (!player.GetComponent<Player>().mapMoving)
             {
@@ -30,7 +30,7 @@ public class mapMoving : MonoBehaviour
    private void MoveRight()
    {
    startPosition = map.transform.position+ new Vector3(10,0,-10);
-   player.transform.position = player.transform.position + new Vector3(4, 0, 0);
+   player.transform.position = player.transform.position + new Vector3(3, 0, 0);
    map.transform.position = startPosition;                 
    }
 }
