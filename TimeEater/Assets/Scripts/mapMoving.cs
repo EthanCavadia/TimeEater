@@ -13,7 +13,7 @@ public class mapMoving : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "PlayerCheck")
         {
             if (!player.GetComponent<Player>().mapMoving)
             {
