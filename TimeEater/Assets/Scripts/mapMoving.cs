@@ -8,11 +8,15 @@ public class mapMoving : MonoBehaviour
 {
     [SerializeField] GameObject map;
     [SerializeField] GameObject player;
-    
+    float TileSizeX = 0f;
+    float TileSizeY = 10f;
+    float waitForSeconds = 0.005f;
+    float playerMoveX = 0.165f;
+    float playerMoveY = 0.155f;
 
 
-    Vector3 startPosition;
-  
+    [SerializeField] TriggerPosition triggerPosition;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "PlayerCheck")
