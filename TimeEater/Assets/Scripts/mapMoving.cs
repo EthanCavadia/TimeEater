@@ -26,8 +26,8 @@ public class mapMoving : MonoBehaviour
  
    private void MoveRight()
    {
-   startPosition = map.transform.position+ new Vector3(10,0,-10);
+   startPosition = camera.transform.position+ new Vector3(10,0,-10);
    player.transform.position = player.transform.position + new Vector3(3, 0, 0);
-   map.transform.position = startPosition;                 
+   camera.transform.position = startPosition;                 
    }
 }
