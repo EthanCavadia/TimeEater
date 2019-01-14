@@ -7,14 +7,16 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="BadPaint.cs" t="Include" />
           <e p="Candle.cs" t="Include" />
+          <e p="CAndleAgainstThePaint.cs" t="Include" />
           <e p="CountDown.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GoToMenu.cs" t="Include" />
           <e p="labyrinth.cs" t="Include" />
           <e p="mapMoving.cs" t="Include" />
           <e p="menuPausee.cs" t="Include" />
-          <e p="NewBehaviourScript.cs" t="Include" />
+          <e p="PaintTransition.cs" t="Include" />
           <e p="play.cs" t="Include" />
           <e p="Player.cs" t="Include" />
         </e>

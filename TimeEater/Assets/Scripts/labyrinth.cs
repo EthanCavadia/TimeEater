@@ -8,7 +8,7 @@ public class labyrinth : MonoBehaviour
     
     private void OnTriggerEnter2D (Collider2D col)
     {
-        if (col.transform.CompareTag("Player"))
+        if (col.transform.CompareTag("PlayerCheck"))
         {
             col.transform.position = respawnPoint.position;
         }
