@@ -17,7 +17,7 @@ public class CandleAgainstThePaint : MonoBehaviour
         
         else if (col.gameObject.CompareTag("Wall"))
         {
-            gameObject.transform.position = candleRespawn.position;
+            col.transform.position = candleRespawn.position;
         }
     }
 }
