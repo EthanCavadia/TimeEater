@@ -6,13 +6,11 @@ using UnityEngine.Experimental.PlayerLoop;
 
 public class mapMoving : MonoBehaviour
 {
-    [SerializeField] GameObject map;
-    [SerializeField] GameObject player;
-    
+    [SerializeField] GameObject camera;
+    [SerializeField] private GameObject player;
 
+    private Vector3 startPosition;
 
-    Vector3 startPosition;
-  
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "PlayerCheck")
@@ -25,12 +23,11 @@ public class mapMoving : MonoBehaviour
             }
         }
     }
-
  
    private void MoveRight()
    {
-   startPosition = map.transform.position+ new Vector3(10,0,-10);
+   startPosition = camera.transform.position+ new Vector3(10,0,-10);
    player.transform.position = player.transform.position + new Vector3(3, 0, 0);
-   map.transform.position = startPosition;                 
+   camera.transform.position = startPosition;                 
    }
 }

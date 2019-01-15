@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\ethan\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\ethan\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_TimeEater.-1786241429.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ethan\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ethan\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_TimeEater.-1786241429.00" t="ExcludeRecursive" />
     <e p="D:\Developemment\TimeEater\TimeEater" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="BadPaint.cs" t="Include" />
+          <e p="Candle.cs" t="Include" />
+          <e p="CAndleAgainstThePaint.cs" t="Include" />
+          <e p="CountDown.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GoToMenu.cs" t="Include" />
+          <e p="labyrinth.cs" t="Include" />
+          <e p="mapMoving.cs" t="Include" />
+          <e p="menuPausee.cs" t="Include" />
+          <e p="PaintTransition.cs" t="Include" />
+          <e p="play.cs" t="Include" />
           <e p="Player.cs" t="Include" />
-          <e p="Room1.cs" t="Include" />
+          <e p="WinCondition.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
